@@ -1,0 +1,927 @@
+[
+ {
+  "id": "py-01",
+  "topic": "python",
+  "tags": [
+   "python",
+   "gil",
+   "concurrency",
+   "threads"
+  ],
+  "difficulty": "medium",
+  "question": "What is the GIL in Python, and how does it affect multithreaded programs?",
+  "key_points": [
+   "global interpreter lock",
+   "only one thread runs Python bytecode at a time",
+   "fine for I/O-bound work",
+   "use multiprocessing or native extensions for CPU-bound work"
+  ]
+ },
+ {
+  "id": "py-02",
+  "topic": "python",
+  "tags": [
+   "python",
+   "async",
+   "asyncio",
+   "event loop"
+  ],
+  "difficulty": "medium",
+  "question": "Explain how async and await work in Python. When would you choose asyncio over threads?",
+  "key_points": [
+   "coroutines",
+   "single-threaded event loop",
+   "cooperative scheduling",
+   "high-concurrency I/O like web servers"
+  ]
+ },
+ {
+  "id": "py-03",
+  "topic": "python",
+  "tags": [
+   "python",
+   "decorators",
+   "functions"
+  ],
+  "difficulty": "easy",
+  "question": "What is a decorator in Python? Describe one you have used.",
+  "key_points": [
+   "function that wraps another function",
+   "functions are first-class",
+   "examples: caching, logging, auth, route registration"
+  ]
+ },
+ {
+  "id": "db-01",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "indexes",
+   "performance"
+  ],
+  "difficulty": "medium",
+  "question": "How does a database index speed up queries, and what is the cost of adding one?",
+  "key_points": [
+   "B-tree or similar structure",
+   "avoids full table scan",
+   "slower writes",
+   "extra storage",
+   "choose columns used in filters and joins"
+  ]
+ },
+ {
+  "id": "db-02",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "acid",
+   "transactions"
+  ],
+  "difficulty": "easy",
+  "question": "What does ACID stand for in databases?",
+  "key_points": [
+   "atomicity",
+   "consistency",
+   "isolation",
+   "durability"
+  ]
+ },
+ {
+  "id": "db-03",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "nosql",
+   "mongodb",
+   "postgres"
+  ],
+  "difficulty": "medium",
+  "question": "When would you pick a NoSQL database over a relational one?",
+  "key_points": [
+   "flexible schema",
+   "horizontal scaling",
+   "access patterns",
+   "trade-offs in joins and consistency"
+  ]
+ },
+ {
+  "id": "sd-01",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "url shortener",
+   "scaling",
+   "caching"
+  ],
+  "difficulty": "hard",
+  "question": "How would you design a URL shortener that handles millions of requests a day?",
+  "key_points": [
+   "id generation or base62 encoding",
+   "key-value store",
+   "cache hot links",
+   "read-heavy traffic",
+   "analytics as async pipeline"
+  ]
+ },
+ {
+  "id": "sd-02",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "rate limiting",
+   "api"
+  ],
+  "difficulty": "medium",
+  "question": "How would you implement rate limiting for a public API?",
+  "key_points": [
+   "token bucket or sliding window",
+   "per-user or per-key limits",
+   "shared store like Redis",
+   "429 responses"
+  ]
+ },
+ {
+  "id": "sd-03",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "voice",
+   "real-time",
+   "latency",
+   "websockets",
+   "webrtc"
+  ],
+  "difficulty": "hard",
+  "question": "Why do real-time voice apps use WebRTC instead of plain HTTP requests?",
+  "key_points": [
+   "low latency",
+   "UDP-based media transport",
+   "continuous streaming",
+   "jitter buffering and echo cancellation"
+  ]
+ },
+ {
+  "id": "dsa-01",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "algorithms",
+   "hash map",
+   "arrays"
+  ],
+  "difficulty": "easy",
+  "question": "How would you find two numbers in an array that add up to a target? What is the time complexity?",
+  "key_points": [
+   "hash map of seen values",
+   "single pass",
+   "O(n) time",
+   "O(n) space",
+   "compare with O(n squared) brute force"
+  ]
+ },
+ {
+  "id": "dsa-02",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "algorithms",
+   "graphs",
+   "bfs",
+   "dfs"
+  ],
+  "difficulty": "medium",
+  "question": "When would you use BFS instead of DFS?",
+  "key_points": [
+   "BFS finds shortest path in unweighted graphs",
+   "level order",
+   "DFS uses less memory on wide graphs",
+   "DFS for cycle detection and topological sort"
+  ]
+ },
+ {
+  "id": "net-01",
+  "topic": "networking",
+  "tags": [
+   "networking",
+   "http",
+   "https",
+   "tls"
+  ],
+  "difficulty": "medium",
+  "question": "What happens when you type a URL into the browser and press enter?",
+  "key_points": [
+   "DNS lookup",
+   "TCP connection",
+   "TLS handshake",
+   "HTTP request and response",
+   "rendering"
+  ]
+ },
+ {
+  "id": "oop-01",
+  "topic": "oop",
+  "tags": [
+   "oop",
+   "object oriented",
+   "solid",
+   "design"
+  ],
+  "difficulty": "easy",
+  "question": "Explain the four pillars of object-oriented programming with a quick example.",
+  "key_points": [
+   "encapsulation",
+   "abstraction",
+   "inheritance",
+   "polymorphism"
+  ]
+ },
+ {
+  "id": "ai-01",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "llm",
+   "rag",
+   "embeddings",
+   "vector database"
+  ],
+  "difficulty": "medium",
+  "question": "What is retrieval-augmented generation and why is it used with LLMs?",
+  "key_points": [
+   "retrieve relevant documents",
+   "embeddings and vector search",
+   "ground answers in data",
+   "reduces hallucination",
+   "keeps knowledge fresh without retraining"
+  ]
+ },
+ {
+  "id": "py-04",
+  "topic": "python",
+  "tags": [
+   "python",
+   "decorators",
+   "closures"
+  ],
+  "difficulty": "medium",
+  "question": "What is a decorator in Python, and how would you write one that logs how long a function takes?",
+  "key_points": [
+   "function that wraps another function",
+   "closures capture the wrapped function",
+   "functools.wraps preserves metadata",
+   "handle args and kwargs",
+   "time.perf_counter"
+  ]
+ },
+ {
+  "id": "py-05",
+  "topic": "python",
+  "tags": [
+   "python",
+   "generators",
+   "iterators",
+   "memory"
+  ],
+  "difficulty": "medium",
+  "question": "What is the difference between a list and a generator, and when would you use a generator?",
+  "key_points": [
+   "lazy evaluation",
+   "yield produces values one at a time",
+   "constant memory for large or streaming data",
+   "single pass only",
+   "generator expressions"
+  ]
+ },
+ {
+  "id": "py-06",
+  "topic": "python",
+  "tags": [
+   "python",
+   "mutable",
+   "default",
+   "arguments"
+  ],
+  "difficulty": "easy",
+  "question": "Why is using a mutable default argument like an empty list a bug in Python, and how do you fix it?",
+  "key_points": [
+   "defaults evaluated once at definition time",
+   "same object shared across calls",
+   "use None as default",
+   "create the list inside the function"
+  ]
+ },
+ {
+  "id": "py-07",
+  "topic": "python",
+  "tags": [
+   "python",
+   "memory",
+   "garbage",
+   "reference counting"
+  ],
+  "difficulty": "hard",
+  "question": "How does memory management work in CPython, and what can cause a memory leak despite garbage collection?",
+  "key_points": [
+   "reference counting",
+   "cyclic garbage collector",
+   "lingering references such as globals, caches, closures",
+   "__del__ and cycles",
+   "tools like tracemalloc"
+  ]
+ },
+ {
+  "id": "db-04",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "index",
+   "indexes"
+  ],
+  "difficulty": "medium",
+  "question": "How does a database index speed up queries, and what is the cost of adding one?",
+  "key_points": [
+   "B-tree lookup instead of full scan",
+   "slower writes",
+   "extra storage",
+   "composite index column order",
+   "low-selectivity columns benefit less"
+  ]
+ },
+ {
+  "id": "db-05",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "transactions",
+   "acid",
+   "isolation"
+  ],
+  "difficulty": "medium",
+  "question": "Explain ACID properties and what an isolation level controls.",
+  "key_points": [
+   "atomicity, consistency, isolation, durability",
+   "isolation controls visibility of concurrent changes",
+   "dirty, non-repeatable and phantom reads",
+   "higher isolation costs concurrency"
+  ]
+ },
+ {
+  "id": "db-06",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "join",
+   "joins"
+  ],
+  "difficulty": "easy",
+  "question": "What is the difference between an inner join and a left join?",
+  "key_points": [
+   "inner returns matching rows only",
+   "left keeps all rows from left table",
+   "unmatched right columns are NULL",
+   "use left join to find missing relations"
+  ]
+ },
+ {
+  "id": "db-07",
+  "topic": "databases",
+  "tags": [
+   "databases",
+   "sql",
+   "nosql",
+   "sharding"
+  ],
+  "difficulty": "hard",
+  "question": "When would you choose a NoSQL database over a relational one, and how does sharding change your design?",
+  "key_points": [
+   "flexible schema or very high write scale",
+   "trade-off on joins and transactions",
+   "shard key choice",
+   "hot partitions",
+   "cross-shard queries are expensive"
+  ]
+ },
+ {
+  "id": "sd-04",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "caching",
+   "cache"
+  ],
+  "difficulty": "medium",
+  "question": "Where would you add caching in a read-heavy web service, and how do you handle invalidation?",
+  "key_points": [
+   "client, CDN, application, database layers",
+   "cache-aside versus write-through",
+   "TTL",
+   "stale data trade-off",
+   "cache stampede protection"
+  ]
+ },
+ {
+  "id": "sd-05",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "rate limiting",
+   "limiter"
+  ],
+  "difficulty": "medium",
+  "question": "How would you design a rate limiter for an API?",
+  "key_points": [
+   "token bucket or sliding window",
+   "per-user or per-IP key",
+   "shared store such as Redis for multiple servers",
+   "atomic increments",
+   "return 429 with retry information"
+  ]
+ },
+ {
+  "id": "sd-06",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "url shortener",
+   "scalability"
+  ],
+  "difficulty": "hard",
+  "question": "Design a URL shortener that handles a hundred million links.",
+  "key_points": [
+   "unique id generation, base62",
+   "read-heavy so cache and replicas",
+   "datastore choice and sharding",
+   "collisions and custom aliases",
+   "expiry and analytics"
+  ]
+ },
+ {
+  "id": "sd-07",
+  "topic": "system design",
+  "tags": [
+   "system design",
+   "message queue",
+   "queues",
+   "async"
+  ],
+  "difficulty": "medium",
+  "question": "When would you put a message queue between two services, and what problems does it introduce?",
+  "key_points": [
+   "decouple and absorb spikes",
+   "async processing",
+   "at-least-once delivery needs idempotency",
+   "ordering",
+   "dead letter queues and monitoring"
+  ]
+ },
+ {
+  "id": "dsa-03",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "hash",
+   "hashmap",
+   "hash table"
+  ],
+  "difficulty": "easy",
+  "question": "How does a hash map work, and what happens on a collision?",
+  "key_points": [
+   "hash function maps key to bucket",
+   "average O(1) lookup",
+   "chaining or open addressing",
+   "resize on load factor",
+   "worst case O(n)"
+  ]
+ },
+ {
+  "id": "dsa-04",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "binary search",
+   "search",
+   "complexity"
+  ],
+  "difficulty": "easy",
+  "question": "Explain binary search, its complexity and its precondition.",
+  "key_points": [
+   "sorted input required",
+   "halve the search space each step",
+   "O(log n)",
+   "careful with mid and bounds",
+   "off-by-one errors"
+  ]
+ },
+ {
+  "id": "dsa-05",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "dynamic programming",
+   "recursion",
+   "dp"
+  ],
+  "difficulty": "hard",
+  "question": "What is dynamic programming? Walk through how you would solve the coin change problem.",
+  "key_points": [
+   "overlapping subproblems and optimal substructure",
+   "memoization versus tabulation",
+   "dp[amount] = min over coins",
+   "base case dp[0]=0",
+   "O(amount * coins)"
+  ]
+ },
+ {
+  "id": "dsa-06",
+  "topic": "dsa",
+  "tags": [
+   "dsa",
+   "graph",
+   "bfs",
+   "dfs",
+   "traversal"
+  ],
+  "difficulty": "medium",
+  "question": "Compare BFS and DFS. When would you use each?",
+  "key_points": [
+   "queue versus stack or recursion",
+   "BFS finds shortest path in unweighted graphs",
+   "DFS for cycle detection, topological sort, exploring all paths",
+   "O(V+E) time",
+   "visited set"
+  ]
+ },
+ {
+  "id": "net-02",
+  "topic": "networking",
+  "tags": [
+   "networking",
+   "http",
+   "https",
+   "tls"
+  ],
+  "difficulty": "easy",
+  "question": "What happens, at a high level, when you type a URL into a browser and press enter?",
+  "key_points": [
+   "DNS lookup",
+   "TCP handshake and TLS",
+   "HTTP request and response",
+   "server processing",
+   "rendering the response"
+  ]
+ },
+ {
+  "id": "net-03",
+  "topic": "networking",
+  "tags": [
+   "networking",
+   "tcp",
+   "udp",
+   "protocol"
+  ],
+  "difficulty": "medium",
+  "question": "What is the difference between TCP and UDP, and when would you pick UDP?",
+  "key_points": [
+   "TCP reliable, ordered, connection oriented",
+   "UDP connectionless, no delivery guarantee",
+   "UDP for real-time audio, video, gaming, DNS",
+   "lower latency and overhead",
+   "retransmission trade-off"
+  ]
+ },
+ {
+  "id": "net-04",
+  "topic": "networking",
+  "tags": [
+   "networking",
+   "rest",
+   "http",
+   "api",
+   "idempotent"
+  ],
+  "difficulty": "medium",
+  "question": "What does it mean for an HTTP method to be idempotent? Give examples.",
+  "key_points": [
+   "same request repeated gives same server state",
+   "GET, PUT, DELETE idempotent",
+   "POST is not",
+   "matters for retries",
+   "safe versus idempotent"
+  ]
+ },
+ {
+  "id": "net-05",
+  "topic": "networking",
+  "tags": [
+   "networking",
+   "websocket",
+   "webrtc",
+   "realtime"
+  ],
+  "difficulty": "medium",
+  "question": "How do WebSockets differ from plain HTTP, and when is WebRTC a better fit?",
+  "key_points": [
+   "persistent full-duplex connection",
+   "server can push without polling",
+   "WebRTC for peer or media streams over UDP",
+   "handshake via upgrade",
+   "scaling stateful connections"
+  ]
+ },
+ {
+  "id": "oop-02",
+  "topic": "oop",
+  "tags": [
+   "oop",
+   "solid",
+   "design",
+   "principles"
+  ],
+  "difficulty": "medium",
+  "question": "Pick two of the SOLID principles and explain them with a concrete example.",
+  "key_points": [
+   "single responsibility",
+   "open closed",
+   "Liskov substitution",
+   "interface segregation",
+   "dependency inversion",
+   "concrete example given"
+  ]
+ },
+ {
+  "id": "oop-03",
+  "topic": "oop",
+  "tags": [
+   "oop",
+   "inheritance",
+   "composition",
+   "design"
+  ],
+  "difficulty": "medium",
+  "question": "What is the difference between inheritance and composition, and which do you prefer?",
+  "key_points": [
+   "is-a versus has-a",
+   "inheritance couples subclass to parent",
+   "composition is more flexible",
+   "prefer composition by default",
+   "inheritance when true subtype relationship"
+  ]
+ },
+ {
+  "id": "oop-04",
+  "topic": "oop",
+  "tags": [
+   "oop",
+   "polymorphism",
+   "abstract",
+   "interface"
+  ],
+  "difficulty": "easy",
+  "question": "Explain polymorphism and the difference between an abstract class and an interface.",
+  "key_points": [
+   "same interface, different behaviour",
+   "method overriding",
+   "abstract class may hold state and partial implementation",
+   "interface defines a contract",
+   "use cases for each"
+  ]
+ },
+ {
+  "id": "oop-05",
+  "topic": "oop",
+  "tags": [
+   "oop",
+   "design patterns",
+   "singleton",
+   "factory",
+   "observer"
+  ],
+  "difficulty": "hard",
+  "question": "Describe a design pattern you have used or would use, the problem it solves and its drawbacks.",
+  "key_points": [
+   "names a real pattern correctly",
+   "problem it addresses",
+   "concrete use case",
+   "drawbacks such as global state or over-engineering",
+   "alternatives"
+  ]
+ },
+ {
+  "id": "ai-02",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "rag",
+   "retrieval",
+   "embeddings",
+   "vector"
+  ],
+  "difficulty": "medium",
+  "question": "Explain how retrieval-augmented generation works and why it reduces hallucination.",
+  "key_points": [
+   "retrieve relevant chunks via embeddings",
+   "inject context into the prompt",
+   "grounds answers in source documents",
+   "chunking and top-k",
+   "still needs evaluation and citations"
+  ]
+ },
+ {
+  "id": "ai-03",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "overfitting",
+   "machine learning",
+   "regularization"
+  ],
+  "difficulty": "easy",
+  "question": "What is overfitting and how do you detect and reduce it?",
+  "key_points": [
+   "model memorizes training noise",
+   "train versus validation gap",
+   "more data, regularization, early stopping, simpler model",
+   "cross-validation",
+   "dropout"
+  ]
+ },
+ {
+  "id": "ai-04",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "metrics",
+   "precision",
+   "recall",
+   "evaluation"
+  ],
+  "difficulty": "medium",
+  "question": "Explain precision and recall, and when you would prioritize one over the other.",
+  "key_points": [
+   "precision = TP/(TP+FP)",
+   "recall = TP/(TP+FN)",
+   "fraud or disease screening favour recall",
+   "spam filtering may favour precision",
+   "F1 and imbalanced classes"
+  ]
+ },
+ {
+  "id": "ai-05",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "llm",
+   "prompt",
+   "evaluation",
+   "hallucination"
+  ],
+  "difficulty": "hard",
+  "question": "How would you evaluate whether an LLM-powered feature is working well before shipping it?",
+  "key_points": [
+   "golden test set with expected outputs",
+   "automatic and human evaluation",
+   "LLM-as-judge with caveats",
+   "regression testing across prompt or model changes",
+   "measure latency, cost and failure modes"
+  ]
+ },
+ {
+  "id": "ai-06",
+  "topic": "ai",
+  "tags": [
+   "ai",
+   "transformer",
+   "attention",
+   "embeddings"
+  ],
+  "difficulty": "hard",
+  "question": "At a high level, how does the attention mechanism in a transformer work?",
+  "key_points": [
+   "queries, keys and values",
+   "similarity scores softmaxed into weights",
+   "weighted sum of values",
+   "lets tokens attend to any position",
+   "multi-head and quadratic cost"
+  ]
+ },
+ {
+  "id": "fe-01",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "react",
+   "state",
+   "hooks"
+  ],
+  "difficulty": "medium",
+  "question": "Explain how useState and useEffect work in React, and a common mistake with useEffect.",
+  "key_points": [
+   "state triggers re-render",
+   "effect runs after render",
+   "dependency array",
+   "stale closures or missing dependencies",
+   "cleanup function"
+  ]
+ },
+ {
+  "id": "fe-02",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "javascript",
+   "event loop",
+   "async"
+  ],
+  "difficulty": "medium",
+  "question": "How does the JavaScript event loop work, and where do promises fit?",
+  "key_points": [
+   "single-threaded call stack",
+   "task queue and microtask queue",
+   "promises run in microtasks before next task",
+   "async await is syntax over promises",
+   "blocking the main thread freezes UI"
+  ]
+ },
+ {
+  "id": "fe-03",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "css",
+   "layout",
+   "flexbox",
+   "grid"
+  ],
+  "difficulty": "easy",
+  "question": "When would you use CSS Grid versus Flexbox?",
+  "key_points": [
+   "flexbox one-dimensional",
+   "grid two-dimensional",
+   "grid for page layout, flex for components",
+   "gap and alignment",
+   "can combine them"
+  ]
+ },
+ {
+  "id": "fe-04",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "performance",
+   "web vitals",
+   "rendering"
+  ],
+  "difficulty": "hard",
+  "question": "A web page feels slow. How do you diagnose and improve its performance?",
+  "key_points": [
+   "measure first with Lighthouse and devtools",
+   "Core Web Vitals",
+   "reduce bundle size, code splitting, lazy load",
+   "image optimization and caching",
+   "avoid unnecessary re-renders"
+  ]
+ },
+ {
+  "id": "fe-05",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "accessibility",
+   "a11y",
+   "semantic"
+  ],
+  "difficulty": "medium",
+  "question": "What does web accessibility involve, and what are three concrete things you do to support it?",
+  "key_points": [
+   "semantic HTML",
+   "keyboard navigation and focus",
+   "alt text and ARIA labels",
+   "colour contrast",
+   "screen reader testing"
+  ]
+ },
+ {
+  "id": "fe-06",
+  "topic": "frontend",
+  "tags": [
+   "frontend",
+   "security",
+   "xss",
+   "cors"
+  ],
+  "difficulty": "medium",
+  "question": "What is XSS and how do you prevent it in a frontend app?",
+  "key_points": [
+   "injected script runs in victim's browser",
+   "escape or sanitize user content",
+   "avoid dangerouslySetInnerHTML",
+   "Content Security Policy",
+   "HttpOnly cookies"
+  ]
+ }
+]
